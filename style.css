@@ -11,13 +11,13 @@ body {
 
 .input {
     text-align: center;
-    margin: 100px 0px;
+    margin: 75px 0px;
 
 }
 
 input[type="text"] {
     height:50px;
-    width:600px;
+    width:50%;
     background: #e7e7e7;
     font-family: "nunito", sans-serif;
     font-weight: bold;
@@ -36,8 +36,34 @@ input[type="submit"] {
     font-size: 20px;
     border:none;
     border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding: 0px;
+
 }
 
 .display {
+    text-align:center;
+}
+
+.text-white {
+    color: seashell;
+}
+
+#logo {
+    font-weight: lighter;
     text-align: center;
+    color: seashell;
+    margin-top: 120px;
+    font-style: italic;
+}
+
+#signLink{
+    text-decoration: springgreen;
+}
+
+#sign{
+    position:absolute;                  
+    bottom:30px;                          
+    left:0; 
 }

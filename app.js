@@ -1,16 +1,37 @@
-let button = document.querySelector('.button');
-let inputValue = document.querySelector('.inputValue').value;
-let name = document.querySelector('.name');
-let desc = document.querySelector('.desc');
-let temp = document.querySelector('.temp');
+var button = document.querySelector('.button');
+var city = document.querySelector('.city');
+var resultcity = document.querySelector('.resultcity');
+var desc = document.querySelector('.desc');
+var temp = document.querySelector('.temp');
+var base = document.querySelector('.base');
 
-let api = `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=YOUR_API_KEY`;
 
+button.addEventListener('click', fetchweather);
 
-const fetchweather = ()=>{
+function fetchweather() {
+    event.preventDefault();
+    var api_key="c1ff2cb016ee3cc0be75ea84f34c24dc";
+    var api = 'https://api.openweathermap.org/data/2.5/weather?q='+city.value+'&appid='+api_key+'&units=metric';
     fetch(api)
-    .then(response => response.json)
-    .then(data => console.log(data))
-    .catch(err => alert(`${inputValue}is a Wrong city name`)) ; 
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        var tempValue = data.main.temp;
+        var descValue = data.weather[0].description;
+        var resultcityValue = data.name;
+        var celcius = tempValue;
+
+        resultcity.innerHTML = `Weather at ${resultcityValue} is:`;
+        desc.innerHTML = `${descValue}`;
+        temp.innerHTML = `temprature: ${celcius}C`;
+
+    })
+    .catch(err =>{ 
+       // alert(`${city.value} is a Wrong city name`);
+        resultcity.innerHTML = `${city.value} is a not city name please try again.`;
+        desc.innerHTML = null;
+        temp.innerHTML = null;
+
+    }) ; 
 }
 
