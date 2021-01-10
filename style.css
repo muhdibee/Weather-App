@@ -67,3 +67,7 @@ input[type="submit"] {
     bottom:30px;                          
     left:0; 
 }
+
+#signLink:hover, #signLink:active{
+    color: wheat;
+}
