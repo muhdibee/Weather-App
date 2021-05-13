@@ -23,7 +23,7 @@ function fetchweather() {
 
         resultcity.innerHTML = `Weather at ${resultcityValue} is:`;
         desc.innerHTML = `${descValue}`;
-        temp.innerHTML = `temprature: ${celcius}C`;
+        temp.innerHTML = `temprature: ${celcius}℃`;
 
     })
     .catch(err =>{ 

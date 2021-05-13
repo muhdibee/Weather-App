@@ -42,7 +42,7 @@ input[type="submit"] {
 
 }
 
-.display {
+.display-center {
     text-align:center;
 }
 
@@ -62,12 +62,12 @@ input[type="submit"] {
     text-decoration: springgreen;
 }
 
-#sign{
-    position:absolute;                  
-    bottom:30px;                          
+#sign{    
+    position: absolute;            
+    top:0;                          
     left:0; 
 }
 
 #signLink:hover, #signLink:active{
-    color: wheat;
+    color:#000000;
 }
