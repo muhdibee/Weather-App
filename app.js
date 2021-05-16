@@ -28,7 +28,7 @@ function fetchweather() {
     })
     .catch(err =>{ 
        // alert(`${city.value} is a Wrong city name`);
-        resultcity.innerHTML = `${city.value} is a not city name please try again.`;
+        resultcity.innerHTML = `${city.value} is not a city please try again.`;
         desc.innerHTML = null;
         temp.innerHTML = null;
 

@@ -62,12 +62,17 @@ input[type="submit"] {
     text-decoration: springgreen;
 }
 
-#sign{    
+#signLink { 
+    color: #a7eeeee1;
+}
+
+#sign {   
+    color: #a7eeeee1;
     position: absolute;            
     top:0;                          
     left:0; 
 }
 
 #signLink:hover, #signLink:active{
-    color:#000000;
+    color:#00000075;
 }
