@@ -46,10 +46,6 @@ input[type="submit"] {
     text-align:center;
 }
 
-.text-white {
-    color: seashell;
-}
-
 #logo {
     font-weight: lighter;
     text-align: center;
@@ -58,21 +54,24 @@ input[type="submit"] {
     font-style: italic;
 }
 
-#signLink{
-    text-decoration: springgreen;
-}
-
 #signLink { 
-    color: #a7eeeee1;
+    text-decoration: #00000075;
+    color:  #00000075;
+    text-decoration-line: underline;
 }
 
 #sign {   
-    color: #a7eeeee1;
+    /* color: #a7eeeee1; */
+    color:  #00000000;
     position: absolute;            
-    top:0;                          
-    left:0; 
+    top:2rem;                          
+    left:2rem; 
 }
 
 #signLink:hover, #signLink:active{
-    color:#00000075;
+    color: #000000;
+    text-decoration: #000000;
+    text-decoration-line: underline;
+
+
 }
