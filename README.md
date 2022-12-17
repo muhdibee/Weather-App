@@ -1,5 +1,5 @@
 ### Weather-App
-This app provides the current temprature and cloud condition of  any  place in the world.
+This app provides the current temprature and cloud condition of  any  place in the world. It also provide country of city inputed
 this app uses openweathermap api to fetch data from a remote server and presents the data/information to the user.
 
 ---
